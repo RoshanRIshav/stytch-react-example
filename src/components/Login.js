@@ -12,23 +12,36 @@ const Login = () => {
   const styles = {
     container: {
       width: '100%',
+      maxWidth: '400px',
+      margin: '0 auto',
+      padding: '2rem',
     },
     buttons: {
       primary: {
-        backgroundColor: '#10A37F', // OpenAI's primary teal color
-        borderColor: '#10A37F',
+        backgroundColor: '#6E37FF', // Claude's signature purple
+        borderColor: '#6E37FF',
+        borderRadius: '8px',
         '&:hover': {
-          backgroundColor: '#0D8C6D', // Slightly darker shade for hover state
+          backgroundColor: '#5925FF', // Slightly darker shade for hover state
         },
       },
     },
     colors: {
-      primary: '#10A37F', // OpenAI's primary teal color
-      background: '#FFFFFF', // White background
-      text: '#202123', // Dark text matching OpenAI's text color
+      primary: '#6E37FF', // Claude's signature purple
+      background: '#FFFFFF', // Clean white background
+      text: '#1A1825', // Dark text for readability
+      borders: '#E5E5E5', // Subtle border color
     },
-    fontFamily: 'Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif',
+    fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
+    text: {
+      fontSize: '16px',
+      lineHeight: '1.5',
+    },
+    input: {
+      borderRadius: '8px',
+    },
   };
+
   const config = {
     products: [Products.emailMagicLinks],
     emailMagicLinksOptions: {
