@@ -15,19 +15,19 @@ const Login = () => {
     },
     buttons: {
       primary: {
-        backgroundColor: '#10A37F', // OpenAI's primary teal color
-        borderColor: '#10A37F',
+        backgroundColor: '#8E44AD', // Claude's primary purple color
+        borderColor: '#8E44AD',
         '&:hover': {
-          backgroundColor: '#0D8C6D', // Slightly darker shade for hover state
+          backgroundColor: '#6C3483', // Darker purple for hover state
         },
       },
     },
     colors: {
-      primary: '#10A37F', // OpenAI's primary teal color
+      primary: '#8E44AD', // Claude's primary purple color
       background: '#FFFFFF', // White background
-      text: '#202123', // Dark text matching OpenAI's text color
+      text: '#333333', // Dark text for readability
     },
-    fontFamily: 'Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif',
+    fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
   };
   const config = {
     products: [Products.emailMagicLinks],
