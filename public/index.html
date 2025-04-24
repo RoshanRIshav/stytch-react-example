@@ -4,27 +4,64 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="An example React application using Stytch for authentication"
-    />
-    <title>Stytch React Example</title>
+    <meta name="theme-color" content="#20232A" />
+    <meta name="description" content="Welcome to TwistAI – Modern authentication for the next generation of AI applications. Secure, seamless experiences through innovative technology." />
+    <title>TwistAI Login</title>
     <link rel="stylesheet" href="stytch.css" />
+    <style>
+      html, body {
+        background: #20232A;
+        color: #FFFFFF;
+        font-family: Inter, Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      header {
+        background: #282C34;
+        padding: 1.5rem 0 1.5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #61DAFB;
+      }
+      header img {
+        margin-bottom: 10px;
+      }
+      .link-container {
+        margin-top: 0.5rem;
+        display: flex;
+        gap: 1.25rem;
+      }
+      .link-container a {
+        color: #61DAFB;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s;
+      }
+      .link-container a:hover {
+        color: #FFFFFF;
+      }
+    </style>
   </head>
   <body>
     <noscript>
-      The Stytch React example application requires JavaScript to run.
+      TwistAI authentication demo requires JavaScript to run.
     </noscript>
     <header>
       <a class="header" href="/">
-        <img src="logo.svg" width="190px"/>
+        <!-- Logo from branding description: stylized twist for innovation/complexity in AI -->
+        <svg width="160" height="44" viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="TwistAI: Modern AI Twist logo">
+          <ellipse cx="22" cy="22" rx="20" ry="20" fill="#61DAFB" stroke="#20232A" stroke-width="3"/>
+          <path d="M16 22c0-6 6-12 12-12s12 6 12 12-6 12-12 12-12-6-12-12zm8 6c0 2 2 4 4 4s4-2 4-4-2-4-4-4-4 2-4 4z" fill="#20232A"/>
+        </svg>
       </a>
       <div class="link-container">
-        <a class="header" target="_blank" href="https://www.stytch.com/docs">Stytch Docs</a>
-        <a class="header" target="_blank" href="https://github.com/stytchauth/stytch-react-example">
-          <img src="github.svg" width="20px" style="margin-right: 4px;"></img>
-          View on Github 
+        <a class="header" target="_blank" href="https://twistai.com">TwistAI Home</a>
+        <a class="header" target="_blank" href="https://twistai.com/docs">TwistAI Docs</a>
+        <a class="header" target="_blank" href="https://github.com/twistai/twistai-login-demo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#61DAFB" viewBox="0 0 24 24"><path d="M12 .496c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.998.108-.775.419-1.304.762-1.604-2.665-.304-5.466-1.332-5.466-5.931 0-1.309.469-2.381 1.236-3.221-.124-.303-.536-1.527.116-3.182 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.002-.404c1.019.005 2.048.138 3.003.404 2.292-1.552 3.298-1.23 3.298-1.23.653 1.655.241 2.879.118 3.182.77.84 1.235 1.912 1.235 3.221 0 4.609-2.803 5.625-5.475 5.921.43.371.814 1.102.814 2.222v3.293c0 .319.192.694.801.576C20.565 22.292 24 17.792 24 12.496c0-6.627-5.373-12-12-12z"/></svg>
+          View on Github
         </a>
       </div>
     </header>
