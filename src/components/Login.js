@@ -4,47 +4,65 @@ import { Products } from '@stytch/vanilla-js';
 
 /*
 Login configures and renders the StytchLogin component which is a prebuilt UI component for auth powered by Stytch
-
-This component accepts style, config, and callbacks props. To learn more about possible options review the documentation at
-https://stytch.com/docs/sdks/javascript-sdk#ui-configs
+This update applies Google's branding: clean, flat, primary colors (blue, red, yellow, green), and liberal use of white.
 */
 const Login = () => {
-  // OpenAI Branding: Modern, minimalist; dark/light mode inspired
   const styles = {
     container: {
       width: '100%',
-      backgroundColor: '#1C1C1E', // main dark background
-      color: '#F9F9F9', // main light text
-      borderRadius: '12px', // modern, clean line
-      boxShadow: '0 2px 16px rgba(28,28,30,0.10)',
-      padding: '2rem 1.25rem',
-      margin: '2rem auto',
-      maxWidth: 420
+      backgroundColor: '#FFFFFF', // Google's main background
+      color: '#202124', // Google main text color
+      borderRadius: '8px',
+      boxShadow: '0 1px 8px rgba(60,64,67,0.08)',
+      padding: '2.5rem 1.5rem',
+      margin: '2.5rem auto',
+      maxWidth: 420,
+      fontFamily:
+        'Roboto, Arial, sans-serif',
     },
     buttons: {
       primary: {
-        backgroundColor: '#1C1C1E', // Primary dark
-        color: '#F9F9F9', // Primary light
-        borderColor: '#EDEDED', // sublte border
-        borderRadius: '8px',
-        fontWeight: 600,
-        letterSpacing: '0.03em',
+        backgroundColor: '#4285F4', // Google Blue
+        color: '#FFFFFF',
+        borderColor: '#4285F4',
+        borderRadius: '4px',
+        fontWeight: 500,
+        fontFamily: 'Roboto, Arial, sans-serif',
+        letterSpacing: '0.01em',
         boxShadow: 'none',
+        padding: '10px 0',
+        marginBottom: '10px',
         transition: 'background .2s',
         '&:hover': {
-          backgroundColor: '#7E7E7E', // muted hover
-          color: '#F9F9F9',
+          backgroundColor: '#3367D6',
+          color: '#FFFFFF',
         },
+      },
+      // Variant/demo for alternate (Google colors)
+      googleRed: {
+        backgroundColor: '#EA4335',
+        color: '#FFFFFF',
+      },
+      googleYellow: {
+        backgroundColor: '#FBBC05',
+        color: '#202124',
+      },
+      googleGreen: {
+        backgroundColor: '#34A853',
+        color: '#FFFFFF',
       },
     },
     colors: {
-      primary: '#1C1C1E', // main dark
-      background: '#F9F9F9', // off-white bg alt
-      text: '#1C1C1E', // dark text for light bg
-      secondary: '#7E7E7E', // muted element
-      border: '#EDEDED', // delicate border
+      primary: '#4285F4',
+      background: '#FFFFFF',
+      text: '#202124',
+      secondary: '#F0F0F0',
+      border: '#C4C4C4',
+      brandRed: '#EA4335',
+      brandYellow: '#FBBC05',
+      brandGreen: '#34A853',
     },
-    fontFamily: 'Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif',
+    fontFamily: 'Roboto, Arial, sans-serif',
   };
   const config = {
     products: [Products.emailMagicLinks],
