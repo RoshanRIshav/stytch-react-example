@@ -9,42 +9,45 @@ This component accepts style, config, and callbacks props. To learn more about p
 https://stytch.com/docs/sdks/javascript-sdk#ui-configs
 */
 const Login = () => {
-  // OpenAI Branding: Modern, minimalist; dark/light mode inspired
+  // OpenAI Branding: Modern, minimalist, focus on tech & innovation
   const styles = {
     container: {
       width: '100%',
-      backgroundColor: '#1C1C1E', // main dark background
-      color: '#F9F9F9', // main light text
-      borderRadius: '12px', // modern, clean line
-      boxShadow: '0 2px 16px rgba(28,28,30,0.10)',
-      padding: '2rem 1.25rem',
+      backgroundColor: '#FFFFFF', // White background (secondary)
+      color: '#000000', // Black text (secondary)
+      borderRadius: '14px',
+      border: '1px solid #00A3E0', // Blue accent (primary)
+      boxShadow: '0 4px 24px rgba(0,163,224,0.08)', // Subtle blue shadow
+      padding: '2rem 1.5rem',
       margin: '2rem auto',
-      maxWidth: 420
+      maxWidth: 440,
+      fontFamily: 'Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Noto Sans", sans-serif',
     },
     buttons: {
       primary: {
-        backgroundColor: '#1C1C1E', // Primary dark
-        color: '#F9F9F9', // Primary light
-        borderColor: '#EDEDED', // sublte border
+        backgroundColor: '#FFB800', // OpenAI yellow (primary)
+        color: '#000000',           // Black text
         borderRadius: '8px',
-        fontWeight: 600,
-        letterSpacing: '0.03em',
-        boxShadow: 'none',
+        border: 'none',
+        fontWeight: 700,
+        letterSpacing: '0.04em',
+        boxShadow: '0 1px 6px rgba(0,0,0,0.06)',
         transition: 'background .2s',
         '&:hover': {
-          backgroundColor: '#7E7E7E', // muted hover
-          color: '#F9F9F9',
+          backgroundColor: '#00A3E0', // OpenAI Blue on hover
+          color: '#FFFFFF',           // White text on hover
         },
       },
     },
     colors: {
-      primary: '#1C1C1E', // main dark
-      background: '#F9F9F9', // off-white bg alt
-      text: '#1C1C1E', // dark text for light bg
-      secondary: '#7E7E7E', // muted element
-      border: '#EDEDED', // delicate border
+      primary: '#FFB800',
+      accent: '#00A3E0',
+      background: '#FFFFFF',
+      text: '#000000',
+      secondary: '#00A3E0',
+      border: '#00A3E0',
     },
-    fontFamily: 'Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif',
+    fontFamily: 'Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Noto Sans", sans-serif',
   };
   const config = {
     products: [Products.emailMagicLinks],
