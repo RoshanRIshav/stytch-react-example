@@ -9,42 +9,42 @@ This component accepts style, config, and callbacks props. To learn more about p
 https://stytch.com/docs/sdks/javascript-sdk#ui-configs
 */
 const Login = () => {
-  // OpenAI Branding: Modern, minimalist; dark/light mode inspired
+  // OpenAI Branding: Modern, minimalist; with OpenAI blue and yellow accents
   const styles = {
     container: {
       width: '100%',
-      backgroundColor: '#1C1C1E', // main dark background
-      color: '#F9F9F9', // main light text
+      backgroundColor: '#FFFFFF', // secondary color (light background)
+      color: '#000000', // secondary color (dark text)
       borderRadius: '12px', // modern, clean line
-      boxShadow: '0 2px 16px rgba(28,28,30,0.10)',
+      boxShadow: '0 2px 24px rgba(0,127,255,0.10)',
       padding: '2rem 1.25rem',
       margin: '2rem auto',
       maxWidth: 420
     },
     buttons: {
       primary: {
-        backgroundColor: '#1C1C1E', // Primary dark
-        color: '#F9F9F9', // Primary light
-        borderColor: '#EDEDED', // sublte border
+        backgroundColor: '#007FFF', // OpenAI blue
+        color: '#FFFFFF', // white text
+        borderColor: '#F9A825', // OpenAI yellow border accent
         borderRadius: '8px',
         fontWeight: 600,
         letterSpacing: '0.03em',
         boxShadow: 'none',
         transition: 'background .2s',
         '&:hover': {
-          backgroundColor: '#7E7E7E', // muted hover
-          color: '#F9F9F9',
+          backgroundColor: '#F9A825', // yellow on hover
+          color: '#000000',
         },
       },
     },
     colors: {
-      primary: '#1C1C1E', // main dark
-      background: '#F9F9F9', // off-white bg alt
-      text: '#1C1C1E', // dark text for light bg
-      secondary: '#7E7E7E', // muted element
-      border: '#EDEDED', // delicate border
+      primary: '#007FFF', // OpenAI blue
+      background: '#FFFFFF', // white bg
+      text: '#000000', // dark text
+      secondary: '#F9A825', // yellow accent
+      border: '#F9A825', // yellow accent border
     },
-    fontFamily: 'Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif',
+    fontFamily: 'Inter, Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif',
   };
   const config = {
     products: [Products.emailMagicLinks],
