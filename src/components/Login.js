@@ -7,44 +7,44 @@ Login configures and renders the StytchLogin component which is a prebuilt UI co
 
 This component accepts style, config, and callbacks props. To learn more about possible options review the documentation at
 https://stytch.com/docs/sdks/javascript-sdk#ui-configs
+
+Google Branding: Google's design style is modern, minimalistic, and user-friendly, utilizing a flat design approach with an emphasis on functionality and accessibility.
+Brand Colors: Blue (#4285F4), Red (#DB4437), Yellow (#F4B400), Green (#0F9D58)
 */
 const Login = () => {
-  // OpenAI Branding: Modern, minimalist; dark/light mode inspired
   const styles = {
     container: {
       width: '100%',
-      backgroundColor: '#1C1C1E', // main dark background
-      color: '#F9F9F9', // main light text
-      borderRadius: '12px', // modern, clean line
-      boxShadow: '0 2px 16px rgba(28,28,30,0.10)',
+      backgroundColor: '#fff', // White background
+      color: '#202124',        // Main text color per Google
+      borderRadius: '12px',
+      boxShadow: '0 2px 16px rgba(66,133,244,0.08)', // Subtle shadow with blue tint
       padding: '2rem 1.25rem',
       margin: '2rem auto',
-      maxWidth: 420
+      maxWidth: 420,
+      border: '1px solid #e0e0e0',
     },
     buttons: {
       primary: {
-        backgroundColor: '#1C1C1E', // Primary dark
-        color: '#F9F9F9', // Primary light
-        borderColor: '#EDEDED', // sublte border
-        borderRadius: '8px',
+        background: `linear-gradient(90deg,#4285F4,#DB4437,#F4B400,#0F9D58)`, // Google Brand Colors
+        color: '#fff',
+        border: 'none',
+        borderRadius: '6px',
         fontWeight: 600,
         letterSpacing: '0.03em',
         boxShadow: 'none',
         transition: 'background .2s',
-        '&:hover': {
-          backgroundColor: '#7E7E7E', // muted hover
-          color: '#F9F9F9',
-        },
+        cursor: 'pointer',
       },
     },
     colors: {
-      primary: '#1C1C1E', // main dark
-      background: '#F9F9F9', // off-white bg alt
-      text: '#1C1C1E', // dark text for light bg
-      secondary: '#7E7E7E', // muted element
-      border: '#EDEDED', // delicate border
+      primary: '#4285F4', // Google's Blue
+      background: '#fff',
+      text: '#202124',
+      secondary: '#DB4437', // Google's Red as secondary
+      border: '#e0e0e0',   // Google gray
     },
-    fontFamily: 'Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif',
+    fontFamily: 'Roboto, Arial, Helvetica, sans-serif',
   };
   const config = {
     products: [Products.emailMagicLinks],
